@@ -12,8 +12,7 @@ if __name__ == "__main__":
     )
     
     scores, eps_history = [], []
-    n_games = 5
-    env = gym.wrappers.RecordVideo(env, 'video', episode_trigger = lambda x: x == n_games)
+    n_games = 500
 
     
     for i in range(n_games):
